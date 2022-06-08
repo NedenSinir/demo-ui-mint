@@ -1,0 +1,50 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  background: url("./mintbg.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+}
+
+ul {
+  list-style-type: none;
+  background-color: rgba(233, 20, 20, 0);
+  justify-content: center;
+  align-content: center;
+  padding-inline-start: 10px;
+  margin-bottom: 12%;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li{
+  margin-top: 30%;
+  
+}
+
