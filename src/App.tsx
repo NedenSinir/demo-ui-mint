@@ -71,7 +71,7 @@ const Content: FC = () => {
 
     const [data, setData] = useState("a")
     useEffect(() => {
-        fetch("/api").then(
+        fetch("https://murmuring-peak-29089.herokuapp.com/api").then(
             response => response.json()
         ).then(
             data => {
@@ -96,7 +96,7 @@ const Content: FC = () => {
                 body: JSON.stringify({ wallet: wallet?.publicKey }),
                 
             };
-            let data = await fetch('/data', requestOptions).then((res) => res.json()).then((data) => data)
+            let data = await fetch('https://murmuring-peak-29089.herokuapp.com/data', requestOptions).then((res) => res.json()).then((data) => data)
             hasPerm = data.hasPermission;
            mintAddress = data.pickedNft
            const price = data.price
@@ -199,7 +199,7 @@ const Content: FC = () => {
                     body: JSON.stringify({ wallet: wallet?.publicKey , pickedNft:pickedNft}),
     
                 };
-               let _data = await fetch('/confrim', requestOptions).then((res) => res.json()).then((data) => console.log(data))
+               let _data = await fetch('https://murmuring-peak-29089.herokuapp.com/confrim', requestOptions).then((res) => res.json()).then((data) => console.log(data))
             } catch (err) {
                 toast.error('Something went wrong!', {
                     position: "top-right",
@@ -262,9 +262,16 @@ const Content: FC = () => {
     else{
         return (
             <div className="App">
+               <ul >
+                    <li>
+
                 <WalletMultiButton />
-                <div>
+                    </li>
+                    <li>
                 <h1>{data}</h1>
+                    </li>
+                    </ul>
+
                 </div>
     
             </div>
