@@ -274,7 +274,6 @@ const Content: FC = () => {
 
                 </div>
     
-            </div>
         );
     }
 };
